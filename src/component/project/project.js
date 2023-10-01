@@ -6,13 +6,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const Project = () => {
+const Project = ({project}) => {
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
 
   return (
-    <div>
+    <div id="project" ref={project}>
       <h1 className="text-sm font-light text-gray-500 uppercase pl-5 p-3 mt-10">
        My work
       </h1>

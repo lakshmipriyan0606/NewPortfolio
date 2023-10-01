@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 
-const Experience = () => {
+const Experience = ({experience}) => {
 
   useEffect(() => {
     AOS.init({ duration: 3000 });
@@ -12,7 +12,7 @@ const Experience = () => {
 
 
   return (
-    <div className="p-4">
+    <div className="p-4" id="experience" ref={experience}>
       <h1 className="text-sm font-light text-gray-500 uppercase pl-5 p-3">
         Experience
       </h1>
@@ -20,13 +20,13 @@ const Experience = () => {
         Work Experience
       </h2>
       <ol
-        class="relative border-l border-gray-200 dark:border-gray-700"
-        data-aos="fade-right"
+        className="relative border-l border-gray-200 dark:border-gray-700"
+        data-aos="fade-up" data-aos-duration="1000"
       >
-        <li class="mb-10 ml-6">
-          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+        <li className="mb-10 ml-6">
+          <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
             <svg
-              class="w-3 h-3 text-blue-800  dark:text-blue-300"
+              className="w-3 h-3 text-blue-800  dark:text-blue-300"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -35,17 +35,17 @@ const Experience = () => {
               <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
             </svg>
           </span>
-          <div data-aos="zoom-in" data-aos-duration="5000">
-            <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+          <div data-aos="zoom-in" data-aos-duration="2000">
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
               Freelancer
-              <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3">
+              <span className="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3">
                 Latest
               </span>
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               September 2023 - Now
             </time>
-            <p class="text-sm font-normal text-gray-500">
+            <p className="text-sm font-normal text-gray-500">
               Engaged in freelancing on real-time projects, specializing in
               front-end and full-stack development. Collaborated with diverse
               clients to deliver customized web solutions, including e-commerce
@@ -54,10 +54,10 @@ const Experience = () => {
             </p>
           </div>
         </li>
-        <li class="mb-10 ml-6">
-          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+        <li className="mb-10 ml-6">
+          <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
             <svg
-              class="w-3 h-3 text-blue-800 text-2xl dark:text-blue-300"
+              className="w-3 h-3 text-blue-800 text-2xl dark:text-blue-300"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -66,14 +66,14 @@ const Experience = () => {
               <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
             </svg>
           </span>
-          <div data-aos="fade-left">
-            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+          <div data-aos="zoom-in"data-aos-duration="1000">
+            <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
               MERN Technology Learning Journey
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               June 2023 - August 2023
             </time>
-            <p class="text-sm font-normal text-gray-500 ">
+            <p className="text-sm font-normal text-gray-500 ">
               Enrolled in an intensive MERN (MongoDB, Express.js, React,
               Node.js) technology course, gaining comprehensive expertise in
               building full-stack web applications. Developed proficiency in
@@ -83,10 +83,10 @@ const Experience = () => {
             </p>
           </div>
         </li>
-        <li class="ml-6">
-          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+        <li className="ml-6">
+          <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
             <svg
-              class="w-3 h-3 text-blue-800 dark:text-blue-300"
+              className="w-3 h-3 text-blue-800 dark:text-blue-300"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -95,14 +95,14 @@ const Experience = () => {
               <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
             </svg>
           </span>
-          <div data-aos="fade-left">
-          <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+          <div data-aos="zoom-in"data-aos-duration="1000">
+          <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
             Intership
           </h3>
-          <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
             March 2023 - May 2023
           </time>
-          <p class="text-sm font-normal text-gray-500 ">
+          <p className="text-sm font-normal text-gray-500 ">
             Engaged in a front-end internship at Artifix Information of
             Technology Private Limited in Bengaluru, focusing on HTML, CSS,
             React.js, and utilizing UI design with Tailwind CSS and Bootstrap.

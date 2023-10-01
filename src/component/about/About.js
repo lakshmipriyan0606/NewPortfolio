@@ -6,24 +6,24 @@ import { MdPhoneIphone } from "react-icons/md";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const About = () => {
+const About = ({about}) => {
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
 
   return (
-    <section id="about">
-      <div className="my-7 p-7">
+    <section ref={about} id="about">
+      <div className="my-7 p-7" >
         <h1 className="text-lg font-light text-gray-500 uppercase">About us</h1>
         <h2 className="text-2xl py-1 font-semibold uppercase">Who am I ?</h2>
-        <p className="text-gray-500 p-2 font-light">
+        <p className="text-gray-500 p-2 font-light" data-aos-duration="1000" data-aos="fade-up">
           <span className="text-gray-800 font-semibold">I'm Lakshmi Priyan</span>, a dedicated frontend developer with a strong
           command of HTML, CSS, and JavaScript, along with proficiency in
           various frameworks. My passion lies in the art of crafting
           user-centric designs, where pixel-perfection meets seamless
           interactivity.
         </p>
-        <p className="text-gray-500 p-2 font-light">
+        <p className="text-gray-500 p-2 font-light"  data-aos="fade-up" data-aos-duration="2000">
           My portfolio showcases a wide range of projects that highlight my
           commitment to responsive and engaging web experiences. With a keen eye
           for detail and a love for staying up-to-date with the latest
@@ -35,19 +35,19 @@ const About = () => {
       <div>
         <main>
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-8 place-items-center p-5" >
-            <div className="mt-3 shadow-2xl rounded w-full h-[150px] flex justify-center flex-col gap-5 p-5 border-b-[3px] border-b-blue-600" data-aos="zoom-in">
+            <div className="mt-3 shadow-2xl rounded w-full h-[150px] flex justify-center flex-col gap-5 p-5 border-b-[3px] border-b-blue-600" data-aos="zoom-in" data-aos-duration="1000">
               <FaRegLightbulb className="text-2xl text-blue-600" />
               <h1 className="text-xl">Graphic Design</h1>
             </div>
-            <div className="shadow-2xl rounded w-full h-[150px] flex justify-center flex-col gap-5 p-5 border-b-[3px] border-b-red-600" data-aos="zoom-in">
+            <div className="shadow-2xl rounded w-full h-[150px] flex justify-center flex-col gap-5 p-5 border-b-[3px] border-b-red-600" data-aos="zoom-in" data-aos-duration="1000">
               <BiGlobeAlt className="text-2xl text-red-600" />
               <h1 className="text-xl">Web Design</h1>
             </div>
-            <div className="shadow-2xl rounded w-full h-[150px] flex justify-center flex-col gap-5 p-5 border-b-[3px] border-b-yellow-500" data-aos="zoom-in">
+            <div className="shadow-2xl rounded w-full h-[150px] flex justify-center flex-col gap-5 p-5 border-b-[3px] border-b-yellow-500" data-aos="zoom-in" data-aos-duration="1000">
               <BsDatabase className="text-2xl text-yellow-500" />
               <h1 className="text-xl">Software</h1>
             </div>
-            <div className="shadow-2xl rounded w-full h-[150px] flex justify-center flex-col gap-5 p-5 border-b-[3px] border-b-purple-700" data-aos="zoom-in">
+            <div className="shadow-2xl rounded w-full h-[150px] flex justify-center flex-col gap-5 p-5 border-b-[3px] border-b-purple-700" data-aos="zoom-in" data-aos-duration="1000">
               <MdPhoneIphone className="text-2xl text-purple-700" />
               <h1 className="text-xl">Application</h1>
             </div>

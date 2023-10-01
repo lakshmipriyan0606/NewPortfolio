@@ -3,20 +3,20 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import bgImg from "../../images/bg1.png";
 import AOS from "aos";
 import "aos/dist/aos.css" 
-const Hero = () => {
+const Hero = ({hero}) => {
 
   useEffect(()=>{
     AOS.init({duration:3000})
   },[])
 
   return (
-    <div>
+    <div id="hero" ref={hero}>
       <div
         style={{ backgroundImage: `url(${bgImg})` }}
         className="w-full h-[600px] bg-center bg-cover md:h-[700px] lg:h-[800px]  lg:bg-center   bg-origin-padding md:bg-origin-content    md:bg-top md:bg-cover bg-fixed relative mt-12 lg:bg-contain xl:bg-no-repeat"
       >
         <div className="absolute w-full h-full bg-black bg-opacity-60"></div>
-        <div className="flex flex-col gap-4 mt-28 p-2 items-center  md:mt-48 lg:mt-52  xl:mt-[280px]  h-full text-white z-20 absolute  md:left-[8%] lg:left-0 text-center xl:left-36  "  data-aos="fade-up">
+        <div className="flex flex-col gap-4 mt-28 p-2 items-center  md:mt-48 lg:mt-52  xl:mt-[280px]  h-full text-white z-20 absolute  md:left-[8%] lg:left-0 text-center xl:left-36  "  data-aos="fade-up" data-aos-duration="1000">
           <h2 className="text-2xl md:text-3xl  mx-auto  text-white font-bold mb-4"
           >
             Ready to create something amazing together?
