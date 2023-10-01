@@ -42,7 +42,7 @@ function App() {
           <MainNav  about={about} hero={hero} service={service} skills={skills} education={education} experience={experience} project={project} contact={contact} />
         </div>
         <div className="w-[60%] xl:w-[65%] absolute left-[30%] lg:left-[35%] xl:left-[30%] lg:-top-12 top-0">
-          <Hero hero={hero}/>
+          <Hero hero={hero} contact={contact}/>
           <About about={about} />
           <Service service={service} />
           <Skills skills={skills} />

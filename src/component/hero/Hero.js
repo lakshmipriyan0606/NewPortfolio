@@ -3,6 +3,8 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import bgImg from "../../images/bg1.png";
 import AOS from "aos";
 import "aos/dist/aos.css" 
+import resume from "./resume.pdf"
+import { Link } from "react-scroll";
 const Hero = ({hero}) => {
 
   useEffect(()=>{
@@ -27,15 +29,21 @@ const Hero = ({hero}) => {
             you!
           </p>
           <div className="flex flex-col gap-4 md:flex-row">
-            <a
-              href="#contact"
-              className="border-2 mx-auto  border-white p-2 rounded hover:bg-white hover:text-black transition-all duration-500"
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={6000}
+              duration={2000}  
+              className="border-2 mx-auto cursor-pointer  border-white p-2 rounded hover:bg-white hover:text-black transition-all duration-500"
             >
               Get in Touch
-            </a>
+            </Link>
             <a
-              href="#jv"
-              className="border-2 mx-auto  border-white p-2 rounded hover:bg-white hover:text-black transition-all duration-500"
+            target="_blank"
+            rel="noreferrer"
+              href={resume}
+              className="border-2 mx-auto cursor-pointer  border-white p-2 rounded hover:bg-white hover:text-black transition-all duration-500"
             >
               Download CV
             </a>
