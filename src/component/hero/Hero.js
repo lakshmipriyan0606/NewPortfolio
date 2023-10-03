@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css" 
 import resume from "./resume.pdf"
 import { Link } from "react-scroll";
-import Typed from 'react-typed';
+
 const Hero = ({hero}) => {
 
   useEffect(()=>{
@@ -20,17 +20,13 @@ const Hero = ({hero}) => {
       >
         <div className="absolute w-full h-full bg-black bg-opacity-60"></div>
         <div className="flex flex-col gap-4 mt-28 p-2 items-center  md:mt-48 lg:mt-52 lg:pl-0 xl:mt-[280px]  h-full text-white z-20 absolute  md:left-[8%] lg:left-0 text-center xl:left-36  "  data-aos="fade-up" data-aos-duration="1000">
-       <h1 className="text-xl mt-10 font-semibold">I ' m   <Typed
-        strings={['Front', 'Web']}
-        typeSpeed={80}
-        backSpeed={60}
-        loop
-        className="font-bold"
-      /> Developer</h1>
       <h2 className="text-2xl md:text-3xl  mx-auto  text-white font-bold mb-4"
           >
             Ready to create something amazing together?
           </h2>
+          <p className="  mx-auto  md:w-[600px] text-center  text-gray-300 mb-8">
+          Explore my portfolio to see my work and skills. If you're interested in collaborating or have a project in mind, I'd love to hear from you!
+          </p>
           <div className="flex flex-col gap-4 md:flex-row">
             <Link
               to="contact"
