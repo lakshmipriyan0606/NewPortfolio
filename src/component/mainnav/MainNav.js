@@ -1,6 +1,7 @@
 import React, {  useState } from "react";
 import profileImg from "../../images/profile-img.jpg";
 
+
 const MainNav = ({about,hero,service,skills,education,experience,project,contact}) => {
   const [active, setActive] = useState(null); 
 

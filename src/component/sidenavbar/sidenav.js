@@ -3,6 +3,7 @@ import profileImg from "../../images/profile-img.jpg";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
+
 const Sidenav = ({ show, setShow }) => {
 
   const handleClose = () => {
@@ -35,7 +36,7 @@ const Sidenav = ({ show, setShow }) => {
   }, [show, handleTouchOutside]);
 
   return (
-    <div className="sidenav-container transition-all duration-700">
+    <div className="sidenav-container transition-all duration-700 ">
       <div
         className={
           show
@@ -44,10 +45,11 @@ const Sidenav = ({ show, setShow }) => {
         }
       >
         {show ? (
-          <section className="mt-9">
-            <div className="flex justify-end items-end text-2xl text-gray-500 m-2">
-              <FaTimes onClick={handleClose} className="cursor-pointer" />
-            </div>
+          <main className="flex flex-col justify-center items-centerh-full  ">
+               <div className="flex justify-end items-end text-2xl text-gray-500 m-2 sm:p-4">
+             <FaTimes onClick={handleClose} className="cursor-pointer" />
+           </div>
+          <section className=" sm:my-16 sm:p-2">
                 <main className="flex flex-col gap-5 lg:mt-10 justify-center items-center">
           <div className="w-[150px] h-[150px] rounded-full">
             <img
@@ -63,7 +65,7 @@ const Sidenav = ({ show, setShow }) => {
             </h2>
           </div>
         </main>
-        <nav className="flex flex-col gap-6 justify-center items-center my-5">
+        <nav className="flex flex-col gap-4   text-[17px] sm:text-base sm:gap-10 justify-center items-center my-5 sm:my-8">
           <Link
             to="hero"
             className={`${
@@ -89,7 +91,7 @@ const Sidenav = ({ show, setShow }) => {
             spy={true}
             smooth={true}
             offset={-100}
-            duration={3000}
+            duration={2000}
             onClick={() => handleClick("about")}
           >
             About
@@ -104,7 +106,7 @@ const Sidenav = ({ show, setShow }) => {
             spy={true}
             smooth={true}
             offset={-100}
-            duration={3000}
+            duration={2000}
             onClick={() => handleClick("service")}
           >
             service
@@ -119,7 +121,7 @@ const Sidenav = ({ show, setShow }) => {
             spy={true}
             smooth={true}
             offset={-100}
-            duration={3000}
+            duration={2000}
             onClick={() => handleClick("skills")}
           >
             skills
@@ -134,7 +136,7 @@ const Sidenav = ({ show, setShow }) => {
             spy={true}
             smooth={true}
             offset={-100}
-            duration={3000}
+            duration={2000}
             onClick={() => handleClick("education")}
           >
             education
@@ -149,7 +151,7 @@ const Sidenav = ({ show, setShow }) => {
             spy={true}
             smooth={true}
             offset={-100}
-            duration={3000}
+            duration={2000}
             onClick={() => handleClick("experience")}
           >
             experience
@@ -164,7 +166,7 @@ const Sidenav = ({ show, setShow }) => {
             spy={true}
             smooth={true}
             offset={-100}
-            duration={3000}
+            duration={2000}
             onClick={() => handleClick("project")}
           >
             project
@@ -179,16 +181,17 @@ const Sidenav = ({ show, setShow }) => {
             spy={true}
             smooth={true}
             offset={140}
-            duration={3000}
+            duration={2000}
             onClick={() => handleClick("contact")}
           >
             contact
           </Link>
         </nav>
-            <p className="text-center  p-3 md:my-3">
+            <p className="text-center  md:my-3">
               © Copyright <span className="text-[#539FF0]">{year}</span> All rights reserved
             </p>
           </section>
+          </main>
         ) : (
           ""
         )}

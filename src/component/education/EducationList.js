@@ -85,7 +85,7 @@ export default function DefaultAccordion() {
                 <p className="flex gap-3 items-center text-lg">
                   <span className="text-base">2019 - 2023</span>
                 </p>
-                <p className="text- flex">82%</p>
+                <p className="text- flex">85%</p>
                 <h1 className="text-[14px] font-semibold text-left">
                   Government College of Engineering Bargur
                 </h1>

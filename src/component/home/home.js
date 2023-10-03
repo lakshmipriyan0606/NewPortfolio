@@ -9,7 +9,7 @@ const Home = ({ show, setShow }) => {
 
   return (
     <section>
-      <div className="flex justify-between items-center fixed top-0 left-0 w-full z-50 bg-white">
+      <div className="flex justify-between items-center fixed top-0 left-0 w-full z-50 bg-white overflow-x-hidden">
         <h1 className="p-3">
           <img
             src={logo}
