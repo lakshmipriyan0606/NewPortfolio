@@ -40,14 +40,14 @@ const Sidenav = ({ show, setShow }) => {
       <div
         className={
           show
-            ? "fixed top-0 left-0 w-5/6 h-full sm:w-[60%] bg-[#F2F3F7] transition-all duration-1000 z-50"
-            : "fixed top-0 -left-full w-5/6 h-full bg-[#F2F3F7]  transition-all duration-1000"
+            ? "fixed top-0 left-0 w-5/6 h-full sm:w-[60%] bg-[#F2F3F7] dark:bg-[#121212]   transition-all duration-1000 z-50"
+            : "fixed top-0 -left-full w-5/6 h-full bg-[#F2F3F7] dark:bg-[#121212]    transition-all duration-1000"
         }
       >
         {show ? (
-          <main className="flex flex-col justify-center items-centerh-full  ">
+          <main className="flex flex-col justify-center items-centerh-full dark:text-white ">
                <div className="flex justify-end items-end text-2xl text-gray-500 m-2 sm:p-4">
-             <FaTimes onClick={handleClose} className="cursor-pointer" />
+             <FaTimes onClick={handleClose} className="cursor-pointer text-white" />
            </div>
           <section className=" sm:my-16 sm:p-2">
                 <main className="flex flex-col gap-5 lg:mt-10 justify-center items-center">
@@ -61,7 +61,7 @@ const Sidenav = ({ show, setShow }) => {
           <div className="text-center">
             <h1 className="text-2xl font-semibold">Lakshmi Priyan</h1>
             <h2 className="text-lg font-light text-[#539FF0]">
-              Frontend Developer
+              Web Developer
             </h2>
           </div>
         </main>
@@ -82,7 +82,7 @@ const Sidenav = ({ show, setShow }) => {
             home
           </Link>
           <Link
-            to="about"
+            to="aabout"
             className={`${
               active === "about"
                 ? "text-[#539FF0] list-none uppercase"
@@ -95,21 +95,6 @@ const Sidenav = ({ show, setShow }) => {
             onClick={() => handleClick("about")}
           >
             About
-          </Link>
-          <Link
-            to="service"
-            className={`${
-              active === "service"
-                ? "text-[#539FF0] list-none uppercase"
-                : "cursor-pointer hover:border-b-2 hover:border-[#539FF0] uppercase transition-colors  duration-500 list-none"
-            }`}
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={2000}
-            onClick={() => handleClick("service")}
-          >
-            service
           </Link>
           <Link
             to="skills"

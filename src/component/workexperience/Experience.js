@@ -13,10 +13,10 @@ const Experience = ({experience}) => {
 
   return (
     <div className="p-4" id="experience" ref={experience}>
-      <h1 className="text-sm font-light text-gray-500 uppercase pl-5 p-3">
+      <h1 className="text-sm font-light text-gray-500 uppercase pl-5 p-3 dark:text-white  dark:font-semibold">
         Experience
       </h1>
-      <h2 className="text-xl py-1 font-light  uppercase mb-4 p-5">
+      <h2 className="text-xl py-1 font-light  uppercase mb-4 p-5 dark:text-white  dark:font-semibold">
         Work Experience
       </h2>
       <ol

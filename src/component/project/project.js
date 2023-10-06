@@ -13,10 +13,10 @@ const Project = ({project}) => {
 
   return (
     <div id="project" ref={project}>
-      <h1 className="text-sm font-light text-gray-500 uppercase pl-5 p-3 mt-10">
+      <h1 className="text-sm font-light text-gray-500 uppercase pl-5 p-3 mt-10 dark:text-white  dark:font-semibold">
        My work
       </h1>
-      <h2 className="text-xl py-1   uppercase mb-4 p-5">
+      <h2 className="text-3xl py-1   uppercase mb-4 p-5 dark:text-white  dark:font-semibold">
         Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3  gap-6 place-items-center p-5 " >

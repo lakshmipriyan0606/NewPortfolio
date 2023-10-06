@@ -1,24 +1,57 @@
-import React, {  useState } from "react";
+import React, {  useState ,useEffect} from "react";
 import profileImg from "../../images/profile-img.jpg";
+import { BsFillMoonFill , BsFillSunFill } from "react-icons/bs";
 
 
-const MainNav = ({about,hero,service,skills,education,experience,project,contact}) => {
+const MainNav = ({about,hero,skills,education,experience,project,contact}) => {
   const [active, setActive] = useState(null); 
 
   function handleClick(linkName,elmRef) {
     setActive(linkName); 
     window.scrollTo({
-      top : elmRef.current.offsetTop,
+      top : elmRef.current.offsetTop - 50 ,
       behavior : "smooth"
     })
   }
+
+  const [theme,setTheme] = useState(false)
+
+  useEffect(()=> {
+    if(window.matchMedia('(prefers-color-scheme : dark)').matches) {
+     setTheme("dark")
+    }
+    else{
+      setTheme("light")
+    }
+  },[])
+
+
+  useEffect(()=>{
+
+  if(theme === "dark") {
+    document.documentElement.classList.add("dark")
+  }
+  else {
+    document.documentElement.classList.remove("dark")
+  }
+ },[theme])
+
+  const handleTheme = () => {
+  setTheme ( theme === "dark" ?  "light" : "dark")
+}
+
 
 
   const year = new Date().getFullYear();
 
   return (
     <div>
-      <section className="fixed bg-[#F2F3F7] top-0 left-0 h-full lg:w-[30%] xl:w-[24%]">
+      <section className="fixed bg-[#F2F3F7] dark:bg-[#121212] dark:text-white top-0 left-0 h-full lg:w-[30%] xl:w-[24%]">
+      <h1 className="flex justify-end p-6 text-3xl items-center mr-[2%] cursor-pointer">
+          {
+            theme  === "light" ?  <BsFillMoonFill   onClick={handleTheme}/> :  <BsFillSunFill  onClick={handleTheme} />
+          }
+        </h1>
         <main className="flex flex-col gap-5 lg:mt-10 xl:mt-4 justify-center items-center">
           <div className="w-[150px] h-[150px] rounded-full">
             <img
@@ -30,7 +63,7 @@ const MainNav = ({about,hero,service,skills,education,experience,project,contact
           <div className="text-center">
             <h1 className="text-2xl font-semibold">Lakshmi Priyan</h1>
             <h2 className="text-lg font-light text-[#539FF0]">
-              Frontend Developer
+              Web Developer
             </h2>
           </div>
         </main>
@@ -55,7 +88,7 @@ const MainNav = ({about,hero,service,skills,education,experience,project,contact
           >
             About
           </button>
-          <button
+          {/* <button
             className={`${
               active === "service"
                 ? "text-[#539FF0] list-none uppercase"
@@ -64,7 +97,7 @@ const MainNav = ({about,hero,service,skills,education,experience,project,contact
             onClick={() => handleClick("service",service)}
           >
             service
-          </button>
+          </button> */}
           <button
             className={`${
               active === "skills"

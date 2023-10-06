@@ -3,8 +3,7 @@ import { FaRegLightbulb } from "react-icons/fa6";
 import { BsDatabase } from "react-icons/bs";
 import { MdPhoneIphone } from "react-icons/md";
 import { BiLayer } from "react-icons/bi";
-import "./service.css";
-import bgImg from "../../images/cover_bg_1.jpg";
+
 import CountUp from 'react-countup';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -69,7 +68,7 @@ const Service = ({service}) => {
 </div>
 
    <ScrollTrigger onEnter={()=> setCount(true)} onExit={()=> setCount(false)}>
-   <section className="p-5">
+   {/* <section className="p-5">
         <div
           style={{
             backgroundAttachment: "fixed",
@@ -115,7 +114,7 @@ const Service = ({service}) => {
         </div>
         }
         </div>
-      </section>
+      </section> */}
    </ScrollTrigger>
     </section>
   );

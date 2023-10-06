@@ -8,10 +8,10 @@ import {BiPhoneCall} from "react-icons/bi"
 const Contact = ({contact}) => {
   return (
     <div id="contact" ref={contact}>
-      <h1 className="text-sm font-light text-gray-500 uppercase pl-5 p-3 mt-10">
+      <h1 className="text-sm font-light text-gray-500 uppercase pl-5 p-3 mt-10 dark:text-white  dark:font-semibold">
         Get in touch
       </h1>
-      <h2 className="text-xl py-1   uppercase mb-4 p-5">Contact</h2>
+      <h2 className="text-xl py-1   uppercase mb-4 p-5 dark:text-white  dark:font-semibold">Contact</h2>
       <div className="grid grid-cols-1 p-4 sm:grid-cols-2  " >
          <div className="flex flex-col sm:mt-14 md:gap-5  items-center" data-aos="zoom-out" data-aos-duration="1000">
          <div className="flex  gap-4 items-center p-2 ">
