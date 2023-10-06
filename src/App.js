@@ -2,7 +2,6 @@ import { useState, useRef} from "react";
 import Home from "./component/home/home";
 import Sidenav from "./component/sidenavbar/sidenav";
 import About from "./component/about/About";
-import Service from "./component/Service/Service";
 import Skills from "./component/skills/Skills";
 import Education from "./component/education/Education";
 import Experience from "./component/workexperience/Experience";
@@ -19,7 +18,6 @@ function App() {
   const [show, setShow] = useState(false);
   const hero = useRef()
   const about = useRef()
-  const service = useRef()
   const skills = useRef()
   const education = useRef()
   const experience = useRef()
@@ -43,7 +41,7 @@ function App() {
       </div>
       <div className="hidden lg:flex w-full justify-center    ">
         <div className="">
-          <MainNav  about={about} hero={hero} service={service} skills={skills} education={education} experience={experience} project={project} contact={contact} />
+          <MainNav  about={about} hero={hero}  skills={skills} education={education} experience={experience} project={project} contact={contact} />
         </div>
         <div className="w-[60%] xl:w-[65%] absolute left-[30%] lg:left-[35%] xl:left-[30%] lg:-top-12 top-0">
           <Hero hero={hero} contact={contact}/>

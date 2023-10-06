@@ -5,7 +5,7 @@ import { GiLaptop} from "react-icons/gi";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BiLayer } from "react-icons/bi";
-import "./service.css";
+import "./about.css";
 
 const About = ({ about }) => {
   useEffect(() => {
