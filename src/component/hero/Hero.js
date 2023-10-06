@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css" 
 import resume from "./resume.pdf"
 import { Link } from "react-scroll";
+import Typed from "react-typed";
 
 
 const Hero = ({hero}) => {
@@ -19,7 +20,15 @@ const Hero = ({hero}) => {
      <div className=" w-[103%] h-[600px] relative bg-black bg-opacity-90  dark:text-black dark:ml-1 dark:overflow-hidden"> 
         <div id="hero" ref={hero}>
 
-        <div className="flex flex-col gap-4 mt-32  items-center  md:mt-48 lg:mt-52 lg:pl-0 xl:mt-[280px] pl-4 dark:pl-0 h-full text-white z-20 absolute  md:left-[8%] lg:left-0 text-center  xl:left-64 dark:mr-2    "  data-aos="fade-up" data-aos-duration="1000">
+        <div className="flex flex-col gap-4 mt-24  items-center  md:mt-48 lg:mt-52 lg:pl-0 xl:mt-[200px] pl-4 dark:pl-0 h-full text-white z-20 absolute  md:left-[8%] lg:left-0 text-center  xl:left-64 dark:mr-2    "  data-aos="fade-up" data-aos-duration="1000">
+
+        <Typed
+        className="text-2xl"
+        strings={['Web Developer', 'FrontEnd Developer' ,"MERN Developer"]}
+        typeSpeed={50} 
+        backSpeed={30} 
+        loop 
+      />
       <h2 className="text-2xl md:text-3xl  mx-auto  text-white font-bold mb-4 dark:text-gray-300  "
           >
             Ready to create something amazing together?
