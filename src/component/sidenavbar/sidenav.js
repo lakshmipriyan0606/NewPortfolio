@@ -40,14 +40,14 @@ const Sidenav = ({ show, setShow }) => {
       <div
         className={
           show
-            ? "fixed top-0 left-0 w-5/6 h-full sm:w-[60%] bg-[#F2F3F7] dark:bg-[#121212]   transition-all duration-1000 z-50"
+            ? "fixed top-0 left-0 w-full h-full sm:w-[60%] bg-[#F2F3F7] dark:bg-[#121212]   transition-all duration-1000 z-50"
             : "fixed top-0 -left-full w-5/6 h-full bg-[#F2F3F7] dark:bg-[#121212]    transition-all duration-1000"
         }
       >
         {show ? (
           <main className="flex flex-col justify-center items-centerh-full dark:text-white ">
                <div className="flex justify-end items-end text-2xl text-gray-500 m-2 sm:p-4">
-             <FaTimes onClick={handleClose} className="cursor-pointer text-white" />
+             <FaTimes onClick={handleClose} className="cursor-pointer dark:text-white text-black " />
            </div>
           <section className=" sm:my-16 sm:p-2">
                 <main className="flex flex-col gap-5 lg:mt-10 justify-center items-center">
