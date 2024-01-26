@@ -17,10 +17,10 @@ const Hero = ({hero}) => {
  
 
   return (
-     <div className=" w-[103%] h-[600px] relative bg-black bg-opacity-90  dark:text-black dark:ml-1 dark:overflow-hidden"> 
+     <div className=" w-[100%] h-[650px] sm:h-[550px] lg:h-[650px] relative bg-black bg-opacity-90  dark:text-black dark:ml-1 dark:overflow-hidden grid "> 
         <div id="hero" ref={hero}>
 
-        <div className="flex flex-col gap-4 mt-24  items-center  md:mt-48 lg:mt-52 lg:pl-0 xl:mt-[200px] pl-4 dark:pl-0 h-full text-white z-20 absolute  md:left-[8%] lg:left-0 text-center  xl:left-64 dark:mr-2    "  data-aos="fade-up" data-aos-duration="1000">
+        <div className="flex flex-col gap-4 mt-24  items-center  md:mt-48 lg:mt-52 lg:pl-0 xl:mt-[200px] pl-4 dark:pl-0 h-full text-white z-20 absolute mx-auto  md:left-[8%] lg:left-0 text-center  xl:left-[150px] 2xl:left-[30%] dark:mr-2    "  data-aos="fade-up" data-aos-duration="1000">
 
         <Typed
         className="text-2xl"
@@ -33,7 +33,7 @@ const Hero = ({hero}) => {
           >
             Ready to create something amazing together?
           </h2>
-          <p className="  mx-auto  md:w-[600px] text-center  text-gray-300 mb-8 dark:text-gray-300">
+          <p className="  mx-auto p-4 lg:p-1 text-lg sm:text-base  md:w-[600px] text-center  text-gray-300 mb-8 dark:text-gray-300">
           Explore my portfolio to see my work and skills. If you're interested in collaborating or have a project in mind, I'd love to hear from you!
           </p>
           <div className="flex flex-col gap-4 md:flex-row">
