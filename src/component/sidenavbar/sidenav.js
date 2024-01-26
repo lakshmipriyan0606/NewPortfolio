@@ -46,7 +46,7 @@ const Sidenav = ({ show, setShow }) => {
       >
         {show ? (
           <main className="flex flex-col justify-center items-centerh-full dark:text-white ">
-               <div className="flex justify-end items-end text-2xl text-gray-500 m-2 sm:p-4">
+               <div className="flex justify-end items-end text-2xl text-gray-500 m-2 mr-10 mt-7 sm:p-4">
              <FaTimes onClick={handleClose} className="cursor-pointer dark:text-white text-black " />
            </div>
           <section className=" sm:my-16 sm:p-2">
