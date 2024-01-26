@@ -73,9 +73,7 @@ const Contact = ({ contact }) => {
       <div className="grid grid-cols-1 p-4 sm:grid-cols-2  ">
         <div
           className="flex flex-col sm:mt-14 md:gap-5  items-center"
-          data-aos="zoom-out"
-          data-aos-duration="1000"
-        >
+          data-aos="fade-down"        >
           <div className="flex  gap-4 items-center p-2 ">
             <BsEnvelopeFill className="text-[#2C98F0] text-opacity-60 bg-[#F2F3F7] p-2 w-10 h-10  rounded" />
             <h1 className="text-[#2C98F0] text-sm ">
@@ -97,7 +95,8 @@ const Contact = ({ contact }) => {
             </h1>
           </div>
         </div>
-        <form className="flex gap-5 flex-col" onSubmit={handleSubmit}>
+        <form className="flex gap-5 flex-col my-9" onSubmit={handleSubmit}  data-aos="fade-up"
+          data-aos-duration="1000">
           <input
             type="text"
             placeholder="Name"
