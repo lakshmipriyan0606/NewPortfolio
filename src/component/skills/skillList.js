@@ -6,7 +6,7 @@
  import skill5 from "../../images/bootstrap.png"
  import skill6 from "../../images/tailwind-css-icon.png"
  import skill7 from "../../images/science.png"
- import skill8 from "../../images/github.png"
+ import skill8 from "../../images/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png"
  import skill9 from "../../images/node icon.png"
  import skill10 from "../../images/express-js.png"
  import skill11 from "../../images/mongodb icon.png"

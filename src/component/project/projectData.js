@@ -6,6 +6,8 @@ import img4 from "../../images/project4.png"
 import img5 from "../../images/project5.png"
 import img6 from "../../images/project6.png"
 import img7 from "../../images/project7.png"
+import img8 from "../../images/flexit.png"
+import img9 from "../../images/joylive.png"
 
 const projectData = [
     {
@@ -24,39 +26,53 @@ const projectData = [
     },
     {
         id : 3,
+        url : "https://flexit-ecru.vercel.app/",
+        skills : "React Tailwind CSS",
+        giturl : "https://github.com/lakshmipriyan0606/flexIT.git",
+        img : img8
+    },
+    {
+        id : 4,
         url : "https://lakshmipriyan0606.github.io/chain",
         skills : "HTML CSS Js Bootstrap",
         giturl : "https://github.com/lakshmipriyan0606/chain.git",
         img : img3,
     },
     {
-        id : 4,
+        id : 5,
         url : "https://lakshmipriyan0606.github.io/Foody",
         skills : "HTML CSS Js Bootstrap",
         giturl : "https://github.com/lakshmipriyan0606/Foody.git",
         img : img4
     },
     {
-        id : 5,
+        id : 6,
         url : "https://lakshmipriyan0606.github.io/Deepclean-Website",
         skills : "HTML CSS Js Tailwind CSS",
         giturl : "  https://github.com/lakshmipriyan0606/Deepclean-Website.git",
         img : img5
     },
     {
-        id : 6,
+        id : 7,
         url : "https://lakshmipriyan0606.github.io/tailwindtemplate",
         skills : "HTML CSS Js Tailwind CSS",
         giturl : "https://github.com/lakshmipriyan0606/tailwindtemplate.git",
         img : img6,
     },
     {
-        id : 7,
+        id : 8,
         url : "https://lakshmipriyan0606.github.io/multishop",
         skills : "HTML CSS",
         giturl : "https://github.com/lakshmipriyan0606/multishop.git",
         img : img7
-    }
+    },
+    {
+        id : 9,
+        url : "https://lakshmipriyan0606.github.io/JoyLive/",
+        skills : "HTML CSS",
+        giturl : "https://github.com/lakshmipriyan0606/JoyLive.git",
+        img : img9
+    },
 
 ]
 
